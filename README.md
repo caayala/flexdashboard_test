@@ -9,3 +9,5 @@
 
 Implementación de sitio de flextable en Github Pages según
 <https://github.com/pbatey/flexdashboard-example>
+
+Agracecimientos a @aajaime por su incentivo a probar esta herramienta.
