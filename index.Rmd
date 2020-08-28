@@ -14,6 +14,8 @@ library(flexdashboard)
 Column {data-width=650}
 -----------------------------------------------------------------------
 
+Agregaré otro gráfico para ver la posibilidad de actualizar la información
+
 ### Chart A
 
 ```{r}
@@ -21,20 +23,27 @@ iris %>%
   count(Species)
 ```
 
+
 Column {data-width=350}
 -----------------------------------------------------------------------
+
+Puedo poner texto sobre el gráfico
 
 ### Chart B
 
 ```{r}
 iris %>% 
   ggplot(aes(x = Petal.Length, y = Petal.Width, colour = Species)) +
-  geom_point()
+  geom_point() +
+  labs(title = 'Base iris')
 ```
 
 ### Chart C
 
 ```{r}
-
+mtcars %>% 
+  ggplot(aes(x = disp, y = wt, colour = factor(cyl))) + 
+  geom_point() +
+  labs(title = 'Base mtcars')
 ```
 
